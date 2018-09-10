@@ -5,9 +5,9 @@ MAINTAINER Rakshit Menpara <rakshit@improwised.com>
 
 # Install build tools
 RUN apk add --no-cache --virtual .build-python-deps readline-dev \
-    gdbm-dev libc6-compat libbz2 libffi-dev libxml2-dev libxslt-dev libressl-dev openssl ca-certificates build-base \
+    gdbm-dev libc6-compat libbz2 libffi-dev libxml2-dev libressl-dev openssl ca-certificates build-base \
     # Install Python tools
-    && apk add --no-cache py-pip py-openssl python-dev py-libxml2 \
+    && apk add --no-cache py-pip py-openssl python-dev py-libxml2 libxslt-dev \
     && pip install --upgrade pip \
     && pip install --upgrade virtualenv \
     && pip install scrapy dateparser requests retrying scrapy-crawlera \
