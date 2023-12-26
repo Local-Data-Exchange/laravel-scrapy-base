@@ -1,4 +1,4 @@
-FROM gcr.io/asyncro-152302/laravel-base
+FROM gcr.io/asyncro-152302/laravel-base:php72-s6
 
 MAINTAINER Rakshit Menpara <rakshit@improwised.com>
 
